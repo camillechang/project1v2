@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                             <div class="myResume">Resume</div>
                             <div class="myProjects">Projects</div>
                         </div>
-                        <span class="introcution">
+                        <p class="introduction">
                             <br />
                             I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
                             Text”
@@ -72,7 +73,7 @@
                             <br />
                             <br />
                             I’m a great place for you to tell a story and let your users know a little more about you.
-                        </span>
+                        </p>
                     </div>
 
 
@@ -89,11 +90,13 @@
             <div id="PROJECTS" class="page">
                 <div class="myProjects">
                     <!-- <div > -->
-                        <h2 class="myProjects-title">Projects</h2>
-                        <p class="myProjects-description">
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                    <h2 class="myProjects-title">Projects</h2>
+                    <p class="myProjects-description">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font. I’m a great place for
+                        you to tell a story and let your users know a little more about you.
                     </p>
-                <!-- </div> -->
+                    <!-- </div> -->
                     <!-- //display projects card -->
 
 
@@ -104,7 +107,7 @@
                                 <h3 class="p1-name">Project 1</h3>
                                 <span class="p1-role">Role title</span>
                             </div>
-                          
+
                             <p class="p1-des">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
                                 Just click “Edit Text” or double click me to add your own content and make changes to
                                 the font. I’m a great place for you to tell a story and let your users know a little
@@ -156,7 +159,48 @@
             </div>
             <!-- Contact -->
             <div id="CONTACT" class="page">
-                hhhhhhhhhhhhhhhhh
+                <div class="contact_body">
+                    <!-- <div class="block-title"> -->
+                    <h2 class="contact-title">Let's talk</h2>
+                    <!-- </div> -->
+
+                    <form class="contact-form">
+
+                        <div class="contact-item contact-name">
+                            <div class="firstname">
+                                <label for="fname">First Name</label>
+                                <input id="fame" type="text" class="form-control" />
+                            </div>
+                            <div class="lastname">
+                                <label for="lname">Last Name</label>
+                                <input id="lname" type="text" class="form-control" />
+                            </div>
+
+                        </div>
+
+                        <div class="contact-item">
+                            <label for="lemail">Email</label>
+
+                            <input id="lemail" type="email" class="form-control" />
+
+                        </div>
+                        <div class="contact-item">
+                            <label for="message">Message for me</label>
+
+                            <textarea id="message" type="text" class="form-control" rows="4"></textarea>
+
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="g-recaptcha" data-siteKey="6Lf5qdYbAAAAAEDPzfv5cFKTHU5rKPAWIVPEJb7m"></div>
+                        </div>
+                        <div class="contact-item">
+                            <input class="btn-submit" type="submit">
+                        </div>
+
+
+                    </form>
+                </div>
             </div>
             <div class="footer-part">
                 <footer class="footer">
@@ -170,6 +214,11 @@
     <script src="./js/index.js">
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
 </body>
 
 </html>
