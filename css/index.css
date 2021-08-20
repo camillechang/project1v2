@@ -4,16 +4,39 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Brush Script MT", cursive, "Lucida Console", "Courier New", monospace;
+}
+
+html, body, .container {
+  overflow: scroll;
 }
 
 body {
   width: 100%;
   height: 100%;
   min-width: 700px;
-  margin: 0;
-  padding: 0;
+}
+
+.pages {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background-image: linear-gradient(to right, #a0c4ff, #ffc6ff);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* absolute The element is positioned relative to its first positioned (not static) ancestor element 
+    This helps all the div page  at same position.*/
+  position: absolute;
+  visibility: hidden;
+  max-width: 100%;
+  margin-left: 10%;
 }
 
 .header {
@@ -22,76 +45,76 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  overflow: hidden;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 10%;
-  background-color: white;
+  padding: 30px 20px;
+  background-color: #fffffc;
   z-index: 1;
 }
 
 .header_title {
   width: 50%;
-  font-size: 2rem;
+}
+
+.title-cube, .header_name, .header_position {
+  display: inline-block;
 }
 
 .title-cube {
   width: 16px;
   height: 16px;
-  background-color: #fffffc;
+  background-color: #9bf6ff;
+}
+
+.header_name {
+  font-size: 2rem;
+}
+
+.header_position {
+  font-size: 1.5rem;
 }
 
 .nav_links {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navbar_item {
   padding: 16px;
-  font-size: 2rem;
-  display: inline-block;
+  font-size: 1.4rem;
   text-decoration: none;
   text-transform: uppercase;
+  color: #a0c4ff;
 }
 
 .navbar_item--active,
 .navbar_item:hover {
   opacity: 1;
+  color: #bdb2ff;
   text-decoration: underline;
 }
 
-.content {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #a0c4ff;
-  background-image: linear-gradient(to right, #a0c4ff, #ffc6ff);
-}
-
 .aboutMe {
-  position: absolute;
+  display: flex;
+  position: relative;
   margin: 0;
   padding: 0;
   top: 20%;
-  left: 20%;
-  width: 80%;
-  min-width: 400px;
-  min-height: 600px;
-  display: flex;
+  left: 10%;
+  width: 100%;
+  height: 50%;
+  max-width: 700px;
+  max-height: 550px;
   box-sizing: border-box;
 }
 
 .leftPart {
   width: 40%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 375px;
-  height: 525px;
   text-align: center;
   -webkit-box-shadow: -8px 14px 17px -8px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: -8px 14px 17px -8px rgba(0, 0, 0, 0.4);
@@ -101,7 +124,7 @@ body {
 .profile {
   background-color: #9bf6ff;
   width: 100%;
-  height: 90%;
+  height: 92%;
 }
 
 .myProfile {
@@ -119,13 +142,14 @@ body {
 .profileLine {
   width: 60px;
   height: 2px;
+  margin-top: 15px;
   position: relative;
   left: 40%;
   background-color: #fdffb6;
 }
 
 .profilePosition {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .profilePosition > span {
@@ -162,33 +186,64 @@ body {
 
 .rightPart {
   position: relative;
-  width: 30%;
-  min-width: 300px;
-  margin: 0;
-  padding-left: 2rem;
+  flex-grow: 1;
+  width: 40%;
+  height: 100%;
+  margin-left: 2rem;
+  box-sizing: border-box;
 }
 
 .rightPart > h1 {
-  font-size: 8rem;
+  font-size: 5rem;
+  margin: 2rem 0;
 }
 
 .rightPart > h3 {
-  font-size: 2rem;
+  width: 80%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.right-btn > div:nth-child(1) {
+.right-btn > div {
+  width: 30%;
+  height: 25px;
+  margin: 5px;
   text-align: center;
+  margin: 0 auto;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: #9bf6ff;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #caffbf;
 }
 
-.myResume {
-  width: 20%;
+.introduction {
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  word-wrap: break-word;
+  margin-top: 4rem;
 }
 
-.introcution {
+.navbar_item--active,
+.navbar_item:hover {
+  opacity: 1;
+}
+
+.navbar_item--active::after,
+.navbar_item:hover::after {
+  width: 24px;
+}
+
+.page--active {
   display: block;
-  font-size: 2rem;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  height: 80%;
 }
 
 .footer-part {

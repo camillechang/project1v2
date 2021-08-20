@@ -1,0 +1,64 @@
+.contact_body {
+  width: 680px;
+  height: 700px;
+  margin: 10%;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contact-form {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  box-sizing: border-box;
+  margin: 20px;
+  background-color: #fffffc;
+}
+
+.contact-item {
+  margin: 15px 10%;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.contact-name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.firstname, .lastname {
+  flex-grow: 1;
+}
+
+.input-control {
+  width: 100%;
+}
+
+input[type=text], .input-control {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.input-control:focus, input[type=text]:focus {
+  border-bottom: 2px solid #a0c4ff;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.btn-submit {
+  background-color: #9bf6ff;
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contact.css.map */
