@@ -8,16 +8,45 @@
   box-sizing: border-box;
   // font-family: "Lucida Console", "Courier New", monospace;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   // font-family: 'Trebuchet MS', sans-serif;
   font-family: 'Brush Script MT', cursive,"Lucida Console", "Courier New", monospace;
 }
 
-body {
+//宽度超出body部分被隐藏
+html, body, .container{
+  overflow:scroll;
+}
+body{
   width: 100%;
   height: 100%;
   min-width: 700px;
-  margin: 0;
-  padding: 0;
+}
+// //set diffrent colors for body part background
+.pages {
+  // padding: 15px 0;
+  position: relative;
+  // flex: 1;
+  width: 100%;
+  height: 150vh;// if no height, will no display background color
+  // background-color: $--background;
+  background-image: linear-gradient(to right, $--color-6, $--color-8);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // justify-content: center;
+
+  /* absolute The element is positioned relative to its first positioned (not static) ancestor element 
+    This helps all the div page  at same position.*/
+  position: absolute;
+  visibility: hidden;
+  max-width: 100%;
+  margin-left: 10%;
+  
 }
 
 .header {
@@ -26,12 +55,13 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  overflow: hidden;
+  // overflow: hidden;
   // margin: 10px;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 30px 20px;
-  background-color: white;
+  background-color: $--color-9;
   z-index: 1; //flow over other pages
 }
 
@@ -61,16 +91,16 @@ font-size: 2rem;
 .nav_links {
   width: 50%;
   height: 100%;
-min-width: 200px;
+// min-width: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .navbar_item {
   // color: $--color-1;
   padding: 16px;
-  font-size: 1.5rem;
-  display: inline-block;
+  font-size: 1.4rem;
+  // display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
    color: $--color-6;
@@ -83,28 +113,28 @@ min-width: 200px;
 }
 
 .aboutMe {
-  position: absolute;
+  display: flex;
+  position: relative;
   margin: 0;
   padding: 0;
   top: 20%;
-  left: 15%;
-  // width: 80%;
-  // min-width: 400px;
-  // min-height: 550px;
-  width: 700px;
-  height: 550px;
-  display: flex;
+  left: 10%;
+  width: 100%;
+  height: 50%;
+  max-width: 700px;
+  max-height: 550px;
+
   box-sizing: border-box;
 }
 .leftPart {
-  display: flex;
-  flex-direction: column;
-  flex-grow:1;
+  // display: flex;
+  // flex-direction: column;
+  // flex-grow:1;
   width: 40%;
   height: 100%;
   margin: 0;
   padding: 0;
-  
+  // flex-grow:1;
   text-align: center;
   -webkit-box-shadow: -8px 14px 17px -8px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: -8px 14px 17px -8px rgba(0, 0, 0, 0.4);
@@ -132,6 +162,7 @@ min-width: 200px;
 .profileLine {
   width: 60px;
   height: 2px;
+  margin-top: 15px;
   position: relative;
   left: 40%;
   background-color: $--color-3;
@@ -179,16 +210,19 @@ min-width: 200px;
   position: relative;
   flex-grow:1;
   // width: 60%;
-  width: 300px;
+  width: 40%;
   height: 100%;
-  margin: 0;
-  padding-left: 2rem;
+  margin-left: 2rem;
+  box-sizing: border-box;
+  // padding-left: 2rem;
 }
 .rightPart > h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  margin: 2rem 0;
 }
 .rightPart > h3 {
-  font-size: 2rem;
+  width: 80%;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -213,42 +247,18 @@ min-width: 200px;
 .introduction {
   // position: absolute;
   // bottom: 10px;
-  display: block;
-  // height: 40%;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  box-sizing: border-box;
+  // display: block;
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  word-wrap: break-word;
+  margin-top: 4rem;
+  // box-sizing: border-box;
 }
 
 
 
-// //set diffrent colors for body part background
-.pages {
-  padding: 15px 0;
-  position: relative;
-  flex: 1;
-  height: 150vh;// if no height, will no display background color
-  background-color: $--background;
-  background-image: linear-gradient(to right, $--color-6, $--color-8);
-}
 
-.page {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  // justify-content: center;
-
-  /* absolute The element is positioned relative to its first positioned (not static) ancestor element 
-    This helps all the div page  at same position.*/
-  position: absolute;
-  visibility: hidden;
-  max-width: 80%;
-  margin-left: 10%;
-  
-  // background: white;
-  // border-radius: 16px;
-  // box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
-}
 .navbar_item--active,
 .navbar_item:hover {
   opacity: 1;

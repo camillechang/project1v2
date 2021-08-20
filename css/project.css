@@ -14,8 +14,13 @@
   text-align: center;
 }
 
+.myProjects-title {
+  font-size: 3rem;
+}
+
 .myProjects-description {
   line-height: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .project1 {
@@ -50,12 +55,13 @@
 }
 
 .p1-role {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-left: 1rem;
 }
 
 .p1-des {
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   margin-right: 15px;
   margin-left: 2rem;
 }

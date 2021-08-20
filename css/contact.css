@@ -1,41 +1,52 @@
 .contact_body {
-  width: 80%;
-  height: 100%;
+  width: 680px;
+  height: 700px;
   margin: 10%;
 }
 
 .contact-title {
   text-align: center;
+  font-size: 3rem;
 }
 
 .contact-form {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 400px;
   box-sizing: border-box;
   margin: 20px;
   background-color: #fffffc;
-  display: flex;
-  flex-direction: column;
 }
 
 .contact-item {
   margin: 15px 10%;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
-}
-
-.form-control {
-  width: 100%;
 }
 
 .contact-name {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.lastname {
-  margin-left: 10px;
+.firstname, .lastname {
+  flex-grow: 1;
+}
+
+.input-control {
+  width: 100%;
+}
+
+input[type=text], .input-control {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.input-control:focus, input[type=text]:focus {
+  border-bottom: 2px solid #a0c4ff;
 }
 
 label {
