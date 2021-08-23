@@ -1,13 +1,14 @@
 @import "./global.scss";
-.contact_body{
-    width: 680px;
-    height: 700px;
-    margin: 10%;
-  }
+// .contact_body{
+//     width: 80%;
+//     height: 70%;
+//     margin: 10%;
+//   }
 
 .contact-title{
   text-align: center;
   font-size: 3rem;
+  padding: 15% 0 5% 0;
 }
 .contact-form {
     // padding: 1.5rem 0;
@@ -37,6 +38,7 @@
 
 .firstname, .lastname{
   flex-grow: 1;
+  margin-top: 3rem;
 }
 
 //for email and message only
