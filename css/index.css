@@ -246,6 +246,25 @@ body {
   height: 80%;
 }
 
+.myresume-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.myresume-download-btn {
+  width: 150px;
+  height: 25px;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: #9bf6ff;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #caffbf;
+}
+
 .footer-part {
   position: absolute;
   bottom: 0;

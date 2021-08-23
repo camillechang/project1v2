@@ -47,13 +47,13 @@
                             <p class="profilePosition"><span>FULL STACK DEVELOPER</span></p>
                         </div>
                         <div class="homepage_socialLinks">
-                            <a href="https://github.com/camillechang" target="_black"><i
+                            <a href="https://www.linkedin.com/in/yingying-camille-chang/" target="_black"><i
                                     class="fa fa-linkedin fa-3x"></i></a>
-                            <a href="https://github.com/camillechang?tab=repositories" target="_black">
+                            <a href="https://github.com/camillechang" target="_black">
                                 <i class="fa fa-github fa-3x"></i></a>
-                            <a href="https://camillechang.com/" target="_black">
-                                <i class="fa fa-facebook fa-3x"></i></a>
-                            <a href="www.camillechang.com" target="_black">
+                            <!-- <a href="https://camillechang.com/" target="_black">
+                                <i class="fa fa-facebook fa-3x"></i></a> -->
+                            <a href="https://www.camillechang.com/" target="_black">
                                 <i class="fa fa-globe fa-3x"></i></a>
                         </div>
                     </div>
@@ -67,12 +67,11 @@
                         </div>
                         <p class="introduction">
                             <br />
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                            Text”
-                            or double click me to add your own content and make changes to the font.
+                            I'm a full stack developer. I used to work as a software developer in Android area for about
+                            4 years. I
                             <br />
                             <br />
-                            I’m a great place for you to tell a story and let your users know a little more about you.
+                            If you are intertested in me, please feel free to contact me on different social medias.
                         </p>
                     </div>
 
@@ -83,8 +82,12 @@
 
 
             <!-- REsume -->
-            <div id="RESUME" class="page">
-                hhhhhhhhhhhhhhhhh
+            <div id="RESUME" class="page" style="text-align: center">
+                <h2 class="myresume-title">Resume</h2>
+                <div class="myresume-download-btn"><a href="./files/resume.pdf" target="_blank">
+                    Download CV
+                </a></div>
+
             </div>
             <!-- Projects -->
             <div id="PROJECTS" class="page">
@@ -92,9 +95,7 @@
                     <!-- <div > -->
                     <h2 class="myProjects-title">Projects</h2>
                     <p class="myProjects-description">
-                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                        or double click me to add your own content and make changes to the font. I’m a great place for
-                        you to tell a story and let your users know a little more about you.
+                        The following are some of the projects I have recently done as a full stack developer.
                     </p>
                     <!-- </div> -->
                     <!-- //display projects card -->
@@ -104,14 +105,18 @@
                         <div class="p1-left">
                             <div class="empty-header"></div>
                             <div class="p1-leftborder">
-                                <h3 class="p1-name">Project 1</h3>
-                                <span class="p1-role">Role title</span>
+                                <h3 class="p1-name">My personal website</h3>
+                                <span class="p1-role">Full stack developer</span>
                             </div>
 
-                            <p class="p1-des">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-                                Just click “Edit Text” or double click me to add your own content and make changes to
-                                the font. I’m a great place for you to tell a story and let your users know a little
-                                more about you.
+                            <p class="p1-des">
+                                This project is a static display website which uses <b>HTML，CSS, JavaScript and Sass
+                                </b>
+                                It was hosted on GitHub pages</b> with my personal domain name.
+                                At the same time, I also tried to use <b>Goolge Firebase</b> and <b>AWS S3 </b>to host
+                                my this website.
+                                In the end, I chose to use GitHub to host my project, because I can modify my code
+                                respository at any time.
                             </p>
                         </div>
                         <div class="p2-right"></div>
@@ -121,13 +126,10 @@
                         <div class="p1-left">
                             <div class="empty-header"></div>
                             <div class="p1-leftborder">
-                                <h3 class="p1-name">Project 1</h3>
-                                <span class="p1-role">Role title</span>
+                                <h3 class="p1-name">Project 2</h3>
+                                <span class="p1-role">Full stack developer</span>
                             </div>
-                            <p class="p1-des">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-                                Just click “Edit Text” or double click me to add your own content and make changes to
-                                the font. I’m a great place for you to tell a story and let your users know a little
-                                more about you.
+                            <p class="p1-des">It's a Weather Application.
                             </p>
                         </div>
                         <div class="p2-right">
@@ -139,13 +141,10 @@
                         <div class="p1-left">
                             <div class="empty-header"></div>
                             <div class="p1-leftborder">
-                                <h3 class="p1-name">Project 1</h3>
-                                <span class="p1-role">Role title</span>
+                                <h3 class="p1-name">Project 3</h3>
+                                <span class="p1-role">Full stack developer</span>
                             </div>
-                            <p class="p1-des">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-                                Just click “Edit Text” or double click me to add your own content and make changes to
-                                the font. I’m a great place for you to tell a story and let your users know a little
-                                more about you.
+                            <p class="p1-des"> It's a team project.
                             </p>
                         </div>
                         <div class="p2-right">images</div>
@@ -164,7 +163,7 @@
                     <h2 class="contact-title">Let's talk</h2>
                     <!-- </div> -->
 
-                    <form class="contact-form">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
 
                         <div class="contact-item contact-name">
                             <div class="firstname">
@@ -173,7 +172,7 @@
                             </div>
                             <div class="lastname">
                                 <label for="lname">Last Name</label>
-                                <input id="lname" type="text" class="lname"/>
+                                <input id="lname" type="text" class="lname" />
                             </div>
 
                         </div>
@@ -190,7 +189,7 @@
                         </div>
 
                         <div class="contact-item">
-                            <div class="g-recaptcha" data-siteKey="6Lf5qdYbAAAAAEDPzfv5cFKTHU5rKPAWIVPEJb7m"></div>
+                            <div class="g-recaptcha" data-siteKey="6LdAEBscAAAAAIntAD63LQ9S8_vrnMIJrU-EPrst"></div>
                         </div>
                         <div class="contact-item">
                             <input class="btn-submit" type="submit">
