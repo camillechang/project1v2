@@ -83,11 +83,10 @@
 
             <!-- REsume -->
             <div id="RESUME" class="page" style="text-align: center">
-                <h2 class="myProjects-title">Resume</h2>
-                Experience <button><a href="./files/resume.pdf" download>
-                        Download File
-                    </a></button>
-                    <embed src="./files/resume.pdf" type="application/pdf"   height="600px" width="100%">
+                <h2 class="myresume-title">Resume</h2>
+                <div class="myresume-download-btn"><a href="./files/resume.pdf" target="_blank">
+                    Download CV
+                </a></div>
 
             </div>
             <!-- Projects -->
@@ -164,7 +163,7 @@
                     <h2 class="contact-title">Let's talk</h2>
                     <!-- </div> -->
 
-                    <form class="contact-form">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
 
                         <div class="contact-item contact-name">
                             <div class="firstname">
